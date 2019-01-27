@@ -1,20 +1,20 @@
 {
-  "Movie": [
-    { "word": "AJJJ", "hint": "A" },
-    { "word": "BDDD", "hint": "B" },
-    { "word": "CCDCC", "hint": "C" },
-    { "word": "DED", "hint": "D" }
+  "Movie And Series": [
+    {
+      "word": "Iron Man",
+      "hint": "Directed by Jon Favreau. With Robert Downey Jr., "
+    },
+    { "word": "Game Of Thrones", "hint": "JN: Know Nothing" },
+    { "word": "Viking", "hint": "Beyond the legend" },
+    {
+      "word": "Avenger",
+      "hint": "Tony Stark, Steve Rogers, Bruce Banner, and Thor ..."
+    }
   ],
-  "Geek": [
-    { "word": "AS", "hint": "A" },
-    { "word": "BD", "hint": "B" },
-    { "word": "CE", "hint": "C" },
-    { "word": "Dd", "hint": "D" }
-  ],
-  "Person": [
-    { "word": "ssA", "hint": "A" },
-    { "word": "Bs", "hint": "B" },
-    { "word": "Cdd", "hint": "C" },
-    { "word": "Dsd", "hint": "D" }
+  "Heros in Dota2": [
+    { "word": "Earthshaker", "hint": "SS : Echo Slam" },
+    { "word": "Pudge", "hint": "Meat Hook.." },
+    { "word": "Invoker", "hint": "Sun Strike" },
+    { "word": "Tusk", "hint": "Walrus PUNCH" }
   ]
 }
