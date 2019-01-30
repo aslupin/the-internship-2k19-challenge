@@ -5,7 +5,9 @@ import math
 
 
 def initial():
-    data = getterData()
+    data = {}
+    data.update(getterData('./datamodel/m_movie.json'))
+    data.update(getterData('./datamodel/m_dota.json'))
     # get keys (types) from file
     keys = list(data.keys())
     # select category
@@ -21,8 +23,7 @@ def randomWord(data):
     return data[index_sample]['word'].lower(), data[index_sample]['hint']
 
 
-def getterData():
-    pathFile = './datamodel/words.json'
+def getterData(pathFile):
     if os.path.exists(pathFile):
         with open(pathFile) as file:
             try:
@@ -32,8 +33,6 @@ def getterData():
     else:
         print("Not Found: directory this file")
         exit()
-        #
-        # return json.load(file)[selectedText]
 
 
 def startGame(word, hint):
@@ -45,7 +44,11 @@ def startGame(word, hint):
     print("Hint: ", hint)
     display(played, score, remaining_wrong_guess, wrong_guessed)
     while(True):
-        my_turn = input("> ").lower()
+        try:
+            my_turn = input("> ").lower()
+        except KeyboardInterrupt:
+            print('KeyboardInterrupt: Exit Game')
+            exit()
         if (my_turn in word):
             # assign char
             if(my_turn not in played):
@@ -104,12 +107,13 @@ def displaySelectCategory(category_one_name='', category_two_name=''):
                     return category_two_name
             else:
                 print("ValueError : Input only 1, 2")
-
-        except ValueError:
-            print("ValueError : Input only number")
-
+                exit()
+        except:
+            print("KeyboardInterrupt : Exit Game.")
+            exit()
     else:
         print("log : some category's null string")
+        exit()
 
 
 def main():

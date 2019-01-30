@@ -4,17 +4,15 @@
       "word": "Iron Man",
       "hint": "Directed by Jon Favreau. With Robert Downey Jr., "
     },
-    { "word": "Game Of Thrones", "hint": "JN: Know Nothing" },
+    { "word": "Game Of Thrones", "hint": "JN Know Nothing" },
     { "word": "Viking", "hint": "Beyond the legend" },
     {
       "word": "Avenger",
       "hint": "Tony Stark, Steve Rogers, Bruce Banner, and Thor ..."
+    },
+    {
+      "word": "The Walking Dead",
+      "hint": "Zombie serie"
     }
-  ],
-  "Heros in Dota2": [
-    { "word": "Earthshaker", "hint": "SS : Echo Slam" },
-    { "word": "Pudge", "hint": "Meat Hook.." },
-    { "word": "Invoker", "hint": "Sun Strike" },
-    { "word": "Tusk", "hint": "Walrus PUNCH" }
   ]
 }
